@@ -1,0 +1,10 @@
+---
+# verify that apache config works before restart
+- name: safe restart apache
+  shell: apachectl configtest
+  register: apache_config_check
+  ignore_errors: true
+  notify: restart apache
+- name: restart apache
+  service: name=apache2 state=restarted
+  when: apache_config_check is defined and apache_config_check.rc == 0
