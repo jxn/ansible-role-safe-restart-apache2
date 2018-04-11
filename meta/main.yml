@@ -3,6 +3,6 @@ galaxy_info:
   description: handlers for safely restarting apache
   company: Blend Interactive
   license: GPLv2
-  min_ansible_version: 2.0
+  min_ansible_version: 2.4
   galaxy_tags: []
 dependencies: []
