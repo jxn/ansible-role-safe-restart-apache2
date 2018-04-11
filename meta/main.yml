@@ -2,7 +2,12 @@ galaxy_info:
   author: Jackson Murtha
   description: handlers for safely restarting apache
   company: Blend Interactive
-  license: GPLv2
+  license: Apache
+
   min_ansible_version: 2.4
-  galaxy_tags: []
+
+  galaxy_tags:
+    - apache2
+    - apache
+
 dependencies: []
