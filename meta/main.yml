@@ -10,4 +10,10 @@ galaxy_info:
     - apache2
     - apache
 
+  platforms:
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+
 dependencies: []
